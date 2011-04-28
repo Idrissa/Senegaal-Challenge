@@ -1,18 +1,13 @@
+import os
 from google.appengine.ext import webapp
+from google.appengine.ext.webapp import template
 from google.appengine.ext.webapp.util import run_wsgi_app
 import datetime
 
 class WelcomePage(webapp.RequestHandler): 
   def get(self):
-    self.response.headers["Content-Type"] = "text/html"
-    self.response.out.write(
-      """<html> <head>
-      <title>Senegaal's Challenge</title> </head>
-      <body>
-      <h1>Senegaal's Challenge</h1>
-      <p> The current time is: %s</p>
-      </body> </html>
-      """ % (datetime.datetime.now())) 
+    path = os.path.join(os.path.dirname(__file__), 'templates/index.html')
+    self.response.out.write(template.render(path, {})) 
 
 app = webapp.WSGIApplication([('/', WelcomePage)])
     
