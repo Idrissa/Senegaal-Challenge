@@ -6,22 +6,26 @@
   </head>
   
   <body>
-    <div id="container">
-      <div id="header">
-        <h1>Header</h1>
+    <div id="site">      
+      <div id="container">
+        <div id="header">
+          <img src="/static/images/pych-logo.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a href="#">Accueil </a></li>
+            <li><a href="#">Classement </a></li>
+            <li><a href="#">Profil </a></li>
+            <li><a href="#">Questions </a></li>
+            <li><a href="#">Help </a></li>
+          </ul>
+        </div>
+        <div id="content">
+          {% block content %} {% endblock %}
+        </div>
       </div>
-      <div id="menu">
-        <ul>
-          <li><a href="#">Accueil </a></li>
-          <li><a href="#">Classement </a></li>
-          <li><a href="#">Profil </a></li>
-          <li><a href="#">Questions </a></li>
-          <li><a href="#">Help </a></li>
-        </ul>
-      </div>
-      <div id="content">
-        {% block content %} {% endblock %}
-      </div>
+    </div>
+    <div id="site_footer">      
       <div id="footer">
         <h3>Footer</h3>
       </div>
