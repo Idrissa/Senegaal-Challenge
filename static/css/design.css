@@ -5,13 +5,14 @@ body{
 
 #site{
   width:100%;
-  border-top:6px solid #356AA0;
-  min-height:768px;
+  border-top:3px solid #C6C4BC;
+  border-bottom:1px solid #eeeeee;
+  min-height:690px;
 }
 #site_footer{
   width:100%;
-  height:210px;
-  background:#36393D;
+  height:300px;
+  background:#797974;
 }
 #container{
   background:#ffffff;
@@ -32,7 +33,7 @@ body{
 	font-size: 14px;
 	margin: 0px;
 	padding: 0 5px 0 5px;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #cccccc;
 }
 #menu li {
 	float: left;
@@ -61,7 +62,7 @@ body{
   min-height:500px;
 }
 #footer{
-  margin:5px auto;
+  margin:0 auto;
   width:1024px;
   height:200px;
   color:#ffffff;
@@ -70,4 +71,17 @@ body{
 .command{
   font-family: Arial, Georgia;
   color:#C79810;
+}
+#compteurs{
+  width:100%;
+  height:195px;
+  margin-top:1px;
+  margin-left:10px;
+  padding-top:5px;
+  float:right;
+  background:#FFFFFF; 
+  border-bottom:1px solid #cccccc;
+}
+.box{
+  width:335px;float:left;border:1px solid#eee; margin:1px;
 }
