@@ -1,6 +1,6 @@
 from google.appengine.ext import db
-from user import User
-from question import Question 
+from models import User,Question
+ 
 
 class Answer(db.Model):
   
