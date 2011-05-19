@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from handlers.application import ApplicationHandler
+
 
 class IndexHandler(ApplicationHandler):
   def get(self):

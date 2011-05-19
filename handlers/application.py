@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+          
 from google.appengine.ext import webapp
 from google.appengine.dist import use_library
 from google.appengine.api import users
@@ -22,6 +24,6 @@ class ApplicationHandler(webapp.RequestHandler):
         else:
             values["tabs"].append(dict(text="Mon profil",
                                        url=users.create_logout_url("/")))
-            values["tabs"].append(dict(text="Deconnecter",
+            values["tabs"].append(dict(text="Déconnecter",
                                        url=users.create_logout_url("/")))
         return values

@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import google.appengine.ext.db
+
 
 class Category(db.Model):
    
