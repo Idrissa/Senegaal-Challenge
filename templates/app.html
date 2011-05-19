@@ -13,11 +13,9 @@
         </div>
         <div id="menu">
           <ul>
-            <li><a href="#">Accueil </a></li>
-            <li><a href="#">les classements </a></li>
-            <li><a href="#">mon profil </a></li>
-            <li><a href="#">Questions </a></li>
-            <li><a href="#">Help </a></li>
+						{% for tab in tabs %}
+            <li><a href="{{ tab.url }}">{{ tab.text}}</a></li>
+						{% endfor %}
           </ul>
         </div>
         <div id="content">

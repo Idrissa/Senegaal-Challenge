@@ -1,4 +1,3 @@
-
 import google.appengine.ext.db
 
 class Category(db.Model):

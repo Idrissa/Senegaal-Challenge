@@ -5,4 +5,5 @@ from handlers.application import ApplicationHandler
 class IndexHandler(ApplicationHandler):
   def get(self):
     values = {}
+    values.update(self.CommonValues())
     self.response.out.write(template.render("templates/index.html", values))
