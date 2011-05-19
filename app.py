@@ -2,16 +2,18 @@
 
 # See http://code.google.com/appengine/docs/python/tools/libraries.html#Django
 from google.appengine.dist import use_library
-use_library('django', '1.2')
+# use_library('django', '1.2')
 
 
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 from handlers.index import IndexHandler
+from handlers.user import UserHandler
 
     
 handlers = [
   ("/", IndexHandler),
+  ("/user", UserHandler),
 ]
 
 

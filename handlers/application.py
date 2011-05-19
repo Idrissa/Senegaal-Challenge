@@ -17,13 +17,12 @@ class ApplicationHandler(webapp.RequestHandler):
             dict(text="Classements", url="/ranking"),
             dict(text="Questions", url="/question"),
         ]
-        user = users.get_current_user()
-        if not user:
+        if not users.get_current_user():
             values["tabs"].append(dict(text="Login",
                                        url=users.create_login_url("/")))
         else:
             values["tabs"].append(dict(text="Mon profil",
-                                       url=users.create_logout_url("/")))
+                                       url="user"))
             values["tabs"].append(dict(text="Déconnecter",
                                        url=users.create_logout_url("/")))
         return values
