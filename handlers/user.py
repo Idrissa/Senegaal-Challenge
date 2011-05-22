@@ -26,10 +26,11 @@ class UserHandler(ApplicationHandler):
   def post(self):
     userid = users.get_current_user()
     user = User.get_by_key_name(userid.nickname())
-    if user:      
+    if user:
       user.first_name = self.request.get("first_name")
       user.last_name = self.request.get("last_name")
       user.put()
       logging.info("Updated user %s", userid.nickname())
     # TODO(xdecoret) add notice when redirecting
     self.redirect("/user")
+

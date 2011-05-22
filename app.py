@@ -9,11 +9,15 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 from handlers.index import IndexHandler
 from handlers.user import UserHandler
+from handlers.question import QuestionHandler
+from handlers.ranking import RankingHandler
 
-    
+
 handlers = [
   ("/", IndexHandler),
   ("/user", UserHandler),
+  ("/questions", QuestionHandler),
+  ("/ranking", RankingHandler),
 ]
 
 
@@ -26,3 +30,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+
