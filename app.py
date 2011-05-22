@@ -11,13 +11,14 @@ from handlers.index import IndexHandler
 from handlers.user import UserHandler
 from handlers.question import QuestionHandler
 from handlers.ranking import RankingHandler
-
+from handlers.profile import ProfileHandler
 
 handlers = [
   ("/", IndexHandler),
   ("/user", UserHandler),
   ("/questions", QuestionHandler),
   ("/ranking", RankingHandler),
+  ("/profile", ProfileHandler),
 ]
 
 

@@ -22,7 +22,7 @@ class ApplicationHandler(webapp.RequestHandler):
                                        url=users.create_login_url("/")))
         else:
             values["tabs"].append(dict(text="Mon profil",
-                                       url="user"))
+                                       url="/profile"))
             values["tabs"].append(dict(text="Déconnecter",
                                        url=users.create_logout_url("/")))
         return values
