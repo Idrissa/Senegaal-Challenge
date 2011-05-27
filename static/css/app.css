@@ -127,6 +127,8 @@ body{
 	position:relative;
 	top:1px;
 }
+.fl{float:left}
+.fr{float:right}
 
 #questions{
     width:99%;
@@ -164,4 +166,39 @@ body{
 }
 .bordure {border:1px solid #eeeeee;}
 .bordure:hover {border:1px solid #ccddcc;}
+
+
+#profile{
+    width:1000px;
+    min-height:400px;
+    margin:20px auto;
+}
+#profile_infos{
+    width:99%;
+    height:100px;
+    margin:0.5%;
+}
+#profile_score{
+    width:50px;height:50px;
+    font-size:16px;font-family: Georgia;
+    color:#000000;
+}
+#profile_avatar{
+    width:90px;height:90px;
+    margin:4px;
+    padding:1px;
+    border:1px solid #eeeeee;
+}
+#infos{
+    width:850px;
+    height:90px;
+    margin:auto;
+    padding:4px;
+}
+#profile_stream{
+    width:99%;
+    min-height:400px;
+    margin:5px auto;
+    border:1px solid #EEE;
+}
 
